@@ -4,7 +4,7 @@ const Post = React.forwardRef(({ post }, ref) => {
 
     const postBody = (
         <>
-            <article className="rounded-xl border-2 border-gray-100 bg-white mt-28 w-96 sm:w-11/12 ml-16 hover:shadow-2xl">
+            <article className="rounded-xl border-2 border-gray-100 bg-white mt-10 w-96 sm:w-11/12 ml-16 hover:shadow-2xl">
                 <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-8">
                     <a href="#" className="block shrink-0">
                         <img
