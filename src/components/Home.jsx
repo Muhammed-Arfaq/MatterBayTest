@@ -2,6 +2,7 @@ import { useCallback, useRef, useState } from "react"
 import usePosts from "../hooks/usePosts"
 import Post from "./Post"
 import Hero from "./Hero"
+import uparrow from '../assets/up-arrow.png'
 
 const Home = () => {
     const [pageNum, setPageNum] = useState(1)
@@ -43,6 +44,9 @@ const Home = () => {
                 <Hero />
                 {content}
                 {isLoading && <p className="flex justify-center items-center font-mono font-bold">Loading more posts...</p>}
+                <a href="#" className="fixed bottom-4 end-3 scroll-smooth">
+                    <img src={uparrow} className="w-10 h-10" />
+                </a>
             </div>
         </>
     )
